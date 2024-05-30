@@ -35,7 +35,7 @@ const Cart = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            Корзина
+            Кошик
           </h2>
           <div class="cart__clear">
             <svg
@@ -75,7 +75,7 @@ const Cart = () => {
               />
             </svg>
 
-            <span>Очистити корзину</span>
+            <span>Очистити кошик</span>
           </div>
         </div>
         <div class="content__items">
@@ -88,8 +88,8 @@ const Cart = () => {
               />
             </div>
             <div class="cart__item-info">
-              <h3>Сырный цыпленок</h3>
-              <p>тонкое тесто, 26 см.</p>
+              <h3>Сирне курча</h3>
+              <p>тонке тісто, 26 см.</p>
             </div>
             <div class="cart__item-count">
               <div class="button button--outline button--circle cart__item-count-minus">
@@ -131,7 +131,7 @@ const Cart = () => {
               </div>
             </div>
             <div class="cart__item-price">
-              <b>770 ₽</b>
+              <b>770 ₴</b>
             </div>
             <div class="cart__item-remove">
               <div class="button button--outline button--circle">
@@ -163,8 +163,8 @@ const Cart = () => {
               />
             </div>
             <div class="cart__item-info">
-              <h3>Сырный цыпленок</h3>
-              <p>тонкое тесто, 26 см.</p>
+              <h3>Сирне курча</h3>
+              <p>тонке тісто, 26 см.</p>
             </div>
             <div class="cart__item-count">
               <div class="button button--outline button--circle cart__item-count-minus">
@@ -206,7 +206,7 @@ const Cart = () => {
               </div>
             </div>
             <div class="cart__item-price">
-              <b>770 ₽</b>
+              <b>770 ₴</b>
             </div>
             <div class="cart__item-remove">
               <div class="button button--outline button--circle">
@@ -238,8 +238,8 @@ const Cart = () => {
               />
             </div>
             <div class="cart__item-info">
-              <h3>Сырный цыпленок</h3>
-              <p>тонкое тесто, 26 см.</p>
+              <h3>Сирне курча</h3>
+              <p>тонке тісто, 26 см.</p>
             </div>
             <div class="cart__item-count">
               <div class="button button--outline button--circle cart__item-count-minus">
@@ -281,7 +281,7 @@ const Cart = () => {
               </div>
             </div>
             <div class="cart__item-price">
-              <b>770 ₽</b>
+              <b>770 ₴</b>
             </div>
             <div class="cart__item-remove">
               <div class="button button--outline button--circle">
@@ -313,8 +313,8 @@ const Cart = () => {
               />
             </div>
             <div class="cart__item-info">
-              <h3>Сырный цыпленок</h3>
-              <p>тонкое тесто, 26 см.</p>
+              <h3>Сирне курча</h3>
+              <p>тонке тісто, 26 см.</p>
             </div>
             <div class="cart__item-count">
               <div class="button button--outline button--circle cart__item-count-minus">
@@ -356,7 +356,7 @@ const Cart = () => {
               </div>
             </div>
             <div class="cart__item-price">
-              <b>770 ₽</b>
+              <b>770 ₴</b>
             </div>
             <div class="cart__item-remove">
               <div class="button button--outline button--circle">
@@ -384,11 +384,11 @@ const Cart = () => {
           <div class="cart__bottom-details">
             <span>
               {' '}
-              Всего пицц: <b>3 шт.</b>{' '}
+              Всього піц: <b>3 шт.</b>{' '}
             </span>
             <span>
               {' '}
-              Сумма заказа: <b>900 ₽</b>{' '}
+              Сума замовлення: <b>900 ₴</b>{' '}
             </span>
           </div>
           <div class="cart__bottom-buttons">
@@ -409,10 +409,10 @@ const Cart = () => {
                 />
               </svg>
 
-              <span>Вернуться назад</span>
+              <span>Повернутися назад</span>
             </Link>
             <div class="button pay-btn">
-              <span>Оплатить сейчас</span>
+              <span>Оплатити зараз</span>
             </div>
           </div>
         </div>
