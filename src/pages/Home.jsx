@@ -8,11 +8,18 @@ const Home = () => {
   const [items, setItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [categoryId, setCategoryId] = React.useState(0);
-  const [sortType, setSortType] = React.useState(0);
+  const [sortType, setSortType] = React.useState({
+    name: 'популярністю',
+    sortProperty: 'rating',
+  });
   React.useEffect(() => {
     setIsLoading(true);
+
+    const sortBy = sortType.sortProperty.replace('-', '');
+    const order = sortType.sortProperty.includes('-') ? 'asc' : 'desc';
+    const category = categoryId > 0 ? `category=${categoryId}` : '';
     fetch(
-      'https://66506723ec9b4a4a6031f142.mockapi.io/items?category=' + categoryId
+      `https://66506723ec9b4a4a6031f142.mockapi.io/items?${category}&sortBy=${sortBy}&order=${order}`
     )
       .then((res) => {
         return res.json();
@@ -32,7 +39,7 @@ const Home = () => {
         />
         <Sort value={sortType} onChangeSort={(i) => setSortType(i)} />
       </div>
-      <h2 className="content__title">Усі піци</h2>
+      <h2 className="content__title">Всі піци</h2>
       <div className="content__items">
         {isLoading
           ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)

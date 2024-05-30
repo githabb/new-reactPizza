@@ -2,7 +2,7 @@ import React from 'react';
 
 function Categories({ value, onChangeCategory }) {
   const categories = [
-    'Усе',
+    'Всі',
     'М"ясні',
     'Вегетаріанська',
     'Гриль',
